@@ -40,7 +40,8 @@ RSpec.configure do |config|
   end
 
   config.around(:each) do |example|
-    DatabaseCleaner.cleaning do
+    DatabaseCleaner.c
+    leaning do
       example.run
     end
   end
